@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banner - BAG Architect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiến trúc sư Bắc Kạn</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: 'Segoe UI', sans-serif; }
+
     .banner {
       position: relative;
       width: 100%;
       height: 100vh;
-      background: url('A_website_homepage_for_Bắc_Kạn_Architects_Group_(B.png') center/cover no-repeat;
+      background: url('https://raw.githubusercontent.com/huynqtd/BAGBK/main/logobag.jpg') center center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     .banner-content {
-      position: absolute;
-      top: 20%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px 30px;
+      border-radius: 15px;
       text-align: center;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 10px;
-      animation: fadeIn 2s ease-in-out;
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+      max-width: 90%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
-    .banner h1 {
-      font-size: 3rem;
-      font-weight: bold;
+
+    .banner-content img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(2px 2px 4px #000);
+    }
+
+    h1 {
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
-    .banner h2 {
-      font-size: 1.5rem;
+
+    h2 {
+      font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 2rem;
     }
-    .banner a.btn {
-      display: inline-block;
-      padding: 12px 24px;
+
+    a.btn {
+      padding: 12px 28px;
       background-color: #FFD700;
       color: #000;
       text-decoration: none;
       font-weight: 600;
-      border-radius: 5px;
+      border-radius: 6px;
       transition: background-color 0.3s ease;
     }
-    .banner a.btn:hover {
+
+    a.btn:hover {
       background-color: #e6b800;
     }
+
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
+
     @media (max-width: 768px) {
-      .banner h1 {
-        font-size: 2rem;
-      }
-      .banner h2 {
-        font-size: 1rem;
-      }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.1rem; }
+      .banner-content { padding: 30px 20px; }
+      .banner-content img { width: 80px; }
     }
   </style>
 </head>
 <body>
   <div class="banner">
     <div class="banner-content">
-      <img src="https://raw.githubusercontent.com/huynqtd/BAGBK/main/logobag.jpg
-" alt="Logo BAG">
-      <h1>KIẾN TRÚC BỀN VỮNG GIỬa LÒNG NÚI RỪNG</h1>
+      <img src="https://raw.githubusercontent.com/huynqtd/BAGBK/main/logobag.jpg" alt="Logo BAG">
+      <h1>Kiến trúc bền vững - Giữa lòng núi rừng</h1>
       <h2>Kiến tạo không gian - Gìn giữ bản sắc</h2>
-      <a href="#du-an" class="btn">Khám phá dự án</a>
+      <a href="#" class="btn">Tìm hiểu thêm</a>
     </div>
   </div>
 </body>
